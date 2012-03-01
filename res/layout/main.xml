@@ -1,0 +1,113 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <Button
+            android:id="@+id/Power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/PowerOnOff" />
+
+        <Spinner
+            android:id="@+id/inputSelector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:prompt="@string/inputPrompt" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputSelector"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="154dp"
+            android:layout_toRightOf="@+id/Power"
+            android:text="@string/Channel"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="28dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="@string/Volume"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/channelUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="22dp"
+            android:text="@string/Up"
+            android:width="50dp" />
+
+        <EditText
+            android:id="@+id/channelChanger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/channelUp"
+            android:layout_below="@+id/channelUp"
+            android:inputType="numberDecimal"
+            android:width="50dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/channelDw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/channelChanger"
+            android:layout_below="@+id/channelChanger"
+            android:text="@string/Down"
+            android:width="50dp" />
+
+        <Button
+            android:id="@+id/volumeUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/channelUp"
+            android:layout_alignBottom="@+id/channelUp"
+            android:layout_alignLeft="@+id/textView2"
+            android:text="@string/Up"
+            android:width="50dp" />
+
+        <Button
+            android:id="@+id/mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/channelChanger"
+            android:layout_alignBottom="@+id/channelChanger"
+            android:layout_alignLeft="@+id/volumeUp"
+            android:text="@string/Mute" />
+
+        <Button
+            android:id="@+id/volumeDw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mute"
+            android:layout_below="@+id/mute"
+            android:text="@string/Down"
+            android:width="50dp" />
+
+        <Button
+            android:id="@+id/flashback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_below="@+id/channelDw"
+            android:layout_marginTop="21dp"
+            android:text="@string/Flashback" />
+
+    </RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="hello">Hello World, IpRemoteControlActivity!</string>
+    <string name="app_name">IpRemoteControl</string>
+    <string name="volumeControl">Volume Control</string>
+<string android:id="@+id/volume" android:layout_width="wrap_content" android:layout_height="wrap_content" name="volumeLabel">Volume</string>
+<string android:id="@+id/PowerOnOff" android:layout_width="wrap_content" android:layout_height="wrap_content" name="PowerOnOff">Power</string>
+<string android:id="@+id/Up" android:layout_width="wrap_content" android:layout_height="wrap_content" name="Up">+</string>
+<string android:id="@+id/Down" android:layout_width="wrap_content" android:layout_height="wrap_content" name="Down">-</string>
+<string android:id="@+id/Channel" android:layout_width="wrap_content" android:layout_height="wrap_content" name="Channel">Channel</string>
+<string android:id="@+id/Flashback" android:layout_width="wrap_content" android:layout_height="wrap_content" name="Flashback">Flashback</string>
+<string android:id="@+id/Volume" android:layout_width="wrap_content" android:layout_height="wrap_content" name="Volume">Volume</string>
+<string android:id="@+id/Mute" android:layout_width="wrap_content" android:layout_height="wrap_content" name="Mute">Mute</string>
+<string name="inputPrompt">Pick an input</string>
+<string-array name="inputOptions">
+    <item>TV</item>
+    <item>HDMI 1</item>
+    <item>HDMI 2</item>
+    <item>HDMI 3</item>
+    <item>HDMI 4</item>
+    <item>Component</item>
+    <item>Video 1</item>
+    <item>Video 2</item>
+    <item>PC</item>
+</string-array>
+
+<string android:id="@+id/settings" android:layout_width="wrap_content" android:layout_height="wrap_content" name="settings">Settings</string>
+
+</resources>
